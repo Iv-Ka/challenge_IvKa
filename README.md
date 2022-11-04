@@ -5,4 +5,4 @@
 
 *Hello! I'm Ivanka, and I'm new in the test automation testing. I'm so happy that I'm a part
 of Dare IT Challenge. I hope to improve my skills and make new acquaintances her, and also
-have a good time.*🙂 
+have a good time.🙂 
