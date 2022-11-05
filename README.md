@@ -10,4 +10,34 @@
 🙂 
 
 
+# Selectors:
+
+## For login
+ //*[@id="login"]
+
+//*[@name="login"]
+
+// input[contains(@id,"login")]
+
+// input[contains(@type,"text")]
+
+## For password
+
+//*[@id="password"]
+
+//*[@name="password"]
+
+// input[contains(@type,"password")]
+
+## For button Sing In 
+
+//*[@id="__next"]/form/div/div[2]/button/span[1]
+
+// button[contains(@type,"submit")]
+
+## For changing lenguage 
+
+//*[@id="__next"]/form/div/div[2]/div/div
+
+//*[@role="button"]
 
