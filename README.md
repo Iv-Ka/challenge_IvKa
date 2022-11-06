@@ -35,7 +35,7 @@
 
 // button[contains(@type,"submit")]
 
-## For changing lenguage 
+## For changing language 
 
 //*[@id="__next"]/form/div/div[2]/div/div
 
