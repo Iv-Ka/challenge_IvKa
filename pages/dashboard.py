@@ -26,7 +26,15 @@ class Dashboard(BasePage):
 
     view_columns_xpath = "// button[contains(@title,'View Columns')]"
 
-    arrow_xpath = "//*[@id='pagination-next']"
+    arrow_next_xpath = "//*[@data-testid='pagination-next']"
+
+    arrow_previous_xpath = "//*[@data-testid='pagination-back']"
+
+    add_link_to_Youtube_xpath = "//*[@aria-label='Add link to Youtube']"
+
+
+
+
 
 
 
