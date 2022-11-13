@@ -7,19 +7,19 @@ class add_a_match(BasePage)
 
     clear_button_xpath = "// span[contains(text( ),'Clear')]"
 
-    My_team_xpath = "//*[@name='myTeam']"
+    my_team_xpath = "//*[@name='myTeam']"
 
-    Enemy_team_xpath = "//*[@name='enemyTeam']"
+    enemy_team_xpath = "//*[@name='enemyTeam']"
 
-    My_team_score_xpath = "//*[@name='myTeamScore']"
+    my_team_score_xpath = "//*[@name='myTeamScore']"
 
     date_xpath = "//*[@type='date']"
 
-    At_home_xpath = "// span[contains(text( ),'Match at home')]"
+    at_home_xpath = "// span[contains(text( ),'Match at home')]"
 
-    Out_home_xpath = "// span[contains(text( ),'Match out home')]"
+    out_home_xpath = "// span[contains(text( ),'Match out home')]"
 
-    T_shirt_xpath = "//*[@name='tshirt']"
+    t_shirt_xpath = "//*[@name='tshirt']"
 
     league_xpath = "//*[@name='league']"
 
