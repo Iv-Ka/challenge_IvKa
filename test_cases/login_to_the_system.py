@@ -1,4 +1,5 @@
 import os
+import time
 import unittest
 from selenium import webdriver
 
@@ -18,10 +19,12 @@ class TestLoginPage(unittest.TestCase):
 
     def test_log_in_to_the_system(self):
         user_login = LoginPage(self.driver)
-        user_login.type_in_email('user04@getnada.com')
+        user_login.type_in_email('user02@getnada.com')
         user_login.type_in_password('Test-1234')
         user_login.click_on_the_sign_in_button()
+        time.sleep(10)
 
     @classmethod
     def tearDown(self):
+        self.driver.quit()
         self.driver.quit()
