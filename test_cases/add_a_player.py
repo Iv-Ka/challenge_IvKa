@@ -27,7 +27,6 @@ class TestAddingPage(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
         dashboard_page = Dashboard(self.driver)
         dashboard_page.click_on_the_adding_player_button()
-        time.sleep(5)
         add_player = AddPlayerPage(self.driver)
         add_player.type_in_email('user06@getnada.com')
         add_player.type_in_name('Zlatan')
@@ -35,7 +34,6 @@ class TestAddingPage(unittest.TestCase):
         add_player.type_in_age('12121999')
         add_player.type_in_position('1')
         add_player.click_on_submit_button()
-        time.sleep(5)
 
     @classmethod
     def tearDown(self):

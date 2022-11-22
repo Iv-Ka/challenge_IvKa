@@ -4,6 +4,8 @@ from pages.base_page import BasePage
 
 
 class Dashboard(BasePage):
+    kolektyw_logo_xpath = "//*[@title= 'Logo Scouts Panel']"
+
     expected_title = "Scouts panel"
 
     dashboard_url = "https://scouts-test.futbolkolektyw.pl"
@@ -23,7 +25,7 @@ class Dashboard(BasePage):
     position_xpath = "//*[@name='mainPosition']"
 
     def title_of_page(self):
-        time.sleep(5)
+        self.wait_for_element_to_be_clickable(self.kolektyw_logo_xpath)
         assert self.get_page_title(self.dashboard_url) == self.expected_title
 
     def click_on_the_adding_player_button(self):
@@ -72,9 +74,9 @@ class Dashboard(BasePage):
 
     view_columns_xpath = "// button[contains(@title,'View Columns')]"
 
-    arrow_next_xpath = "//*[@data-testid='pagination-next']"
+    arrow_next_xpath = "//*[@data-test id='pagination-next']"
 
-    arrow_previous_xpath = "//*[@data-testid='pagination-back']"
+    arrow_previous_xpath = "//*[@data-test id='pagination-back']"
 
     add_link_to_Youtube_xpath = "//*[@aria-label='Add link to Youtube']"
 

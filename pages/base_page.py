@@ -1,5 +1,9 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
+from utils.settings import DEFAULT_LOCATOR_TYPE
 
 
 class BasePage:
@@ -15,3 +19,8 @@ class BasePage:
 
     def get_page_title(self, url):
         return self.driver.title
+
+    def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
+        wait = WebDriverWait(self.driver, 10)
+        element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
+
